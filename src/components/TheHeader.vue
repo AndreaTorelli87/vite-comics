@@ -4,7 +4,6 @@ export default {
   data() {
     return {
       navLinks: ["CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VIDEOS", "FANS", "NEWS", "SHOP"],
-      message: "sono l'header"
     };
   },
 };
