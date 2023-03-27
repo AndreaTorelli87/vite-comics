@@ -12,10 +12,12 @@ export default {
 <template>
    <div class="sfondo">
       <div class="container d-flex justify-content-between align-items-center">
-         <button>SIGN-UP NOW!</button>
+         <button class="text-white fw-bold p-2">SIGN-UP NOW!</button>
          <div>
-            <span>FOLLOW US</span>
-            <img v-for="icon in socialIcons" :src="'../../public/img/footer-' + icon +'.png'" :alt="'Logo' + icon" class="px-2">
+            <span class="fw-bold px-2">FOLLOW US</span>
+            <a v-for="icon in socialIcons" href="#">
+               <img :src="'../../public/img/footer-' + icon +'.png'" :alt="'logo ' + icon" class="px-2">
+            </a>
          </div>
       </div>
    </div>
@@ -25,7 +27,19 @@ export default {
 
    .sfondo{
       background-color: #303030;
-      height: 11vh;
+   }
+
+   .container{
+      height: 15vh;
+   }
+
+   span{
+      color: #0282F9;
+   }
+
+   button{
+      border: solid 2px #0282F9;
+      background-color: transparent;
    }
 
 </style>

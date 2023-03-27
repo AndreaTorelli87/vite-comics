@@ -32,25 +32,39 @@ export default {
 </script>
 
 <template>
-   <div class="sfondo">
-      <div class="container py-5 d-flex justify-content-between">
-         <div class="liste">
-            <ul v-for="(gruppo, i) in footerLinks">
-               <h3>{{ gruppo.title }}</h3>
-               <li>{{ gruppo.links }}</li>
-            </ul>
+   <div class="sfondo overflow-hidden">
+      <div class="container py-5 d-flex justify-content-between position-relative">
+         <div class="liste d-flex flex-column flex-wrap">
+            <div v-for="(gruppo, i) in footerLinks" class="px-3">
+               <h4 class="text-white fw-bold">{{ gruppo.title }}</h4>
+               <ul class="list-unstyled">
+                  <li v-for="link in gruppo.links">
+                     <a :href="link" class="text-decoration-none text-secondary">{{ link}}</a>
+                  </li>
+               </ul>
+            </div>
          </div>
-         <img src="../../public/img/dc-logo-bg.png" alt="">
+         <img src="../../public/img/dc-logo-bg.png" alt="logo DC">
       </div>
    </div>
 </template>
 
 <style scoped>
-   .sfondo{
-      /* background-image: url(../../public/img/footer-bg.jpg); */
-      background-repeat: no-repeat;
-      background-size: cover;
-      
-   }
+.sfondo {
+   background-image: url(../../public/img/footer-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 50vh;
+}
+
+.container {
+   height: 50vh;
+}
+
+img{
+   position: absolute;
+   right: 0;
+   top: -45px;
+}
 </style>
 
