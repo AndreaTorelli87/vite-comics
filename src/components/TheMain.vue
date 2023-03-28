@@ -91,13 +91,15 @@ export default {
       <div class="container">
          <h2 class="text-white fw-bold p-3 d-inline-block">CURRENT SERIES</h2>
       </div>
-      <div class="container py-5">
-         <MyCard v-for="comic in comics"
+      <div class="container pt-5 d-flex flex-wrap">
+         <div class="row">
+            <MyCard v-for="comic in comics"
          :image="comic.thumb"
          :price="comic.price"
          :title="comic.series"
          :type="comic.type"
          />
+         </div>
       </div>
    </div>
 </template>

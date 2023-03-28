@@ -12,14 +12,23 @@
 
 <template>
 
-   <div class="p-2">
+   <div class="card">
       <img :src="image" :alt="title"/>
-      <h5>{{ title }}</h5>
-      <h3 class="text-white">prova</h3>
+      <h6 class="py-2 text-white">{{ title }}</h6>
    </div>
 
 </template>
 
-<style>
+<style scoped> 
+   .card{
+      width: calc(100% / 6 );
+      background-color: transparent;
+   }
+
+   img{
+      object-fit: cover;
+      height: 12rem;
+      object-position: top;
+   }
 
 </style>
