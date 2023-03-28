@@ -12,25 +12,29 @@ export default {
 <template>
   <div class="container d-flex justify-content-between">
     <img src="../../public/img/dc-logo.png" alt="Logo DC" class="p-3">
-    <ul class="d-flex justify-content-center align-items-center list-unstyled h-100 m-0">
+    <ul class="d-flex list-unstyled m-0">
       <li v-for="link in navLinks" class="px-3">
-        <a :href="link" class="text-decoration-none text-black fw-bold">{{ link }}</a>
+        <a :href="link" class="text-decoration-none fw-bold">{{ link }}</a>
       </li>
     </ul>
   </div>
 </template>
 
-<style scoped>
-  li{
-    padding: 31px 0;
-  }
+<style lang="scss" scoped>
+li {
+  padding: 50px 0;
+  border-bottom: solid 6px white;
 
-  li:hover{
+  &:hover {
     border-bottom: solid 6px #0282F9;
-    padding: 37px;
-  }
 
-  li:hover a{
-    color: #0282F9;
+    a {
+      color: #0282F9;
+    }
   }
+}
+
+a {
+  color: black;
+}
 </style>

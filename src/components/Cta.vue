@@ -23,7 +23,7 @@ export default {
    </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
    .sfondo{
       background-color: #303030;

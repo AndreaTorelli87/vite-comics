@@ -34,7 +34,7 @@ export default {
                <h4 class="text-white fw-bold">{{ gruppo.title }}</h4>
                <ul class="list-unstyled">
                   <li v-for="link in gruppo.links">
-                     <a :href="link" class="text-decoration-none text-secondary">{{ link}}</a>
+                     <a :href="link" class="text-decoration-none text-secondary">{{ link }}</a>
                   </li>
                </ul>
             </div>
@@ -44,7 +44,7 @@ export default {
    </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .sfondo {
    background-image: url(../../public/img/footer-bg.jpg);
 }
@@ -53,7 +53,7 @@ export default {
    height: 50vh;
 }
 
-img{
+img {
    position: absolute;
    right: 0;
    top: -45px;
