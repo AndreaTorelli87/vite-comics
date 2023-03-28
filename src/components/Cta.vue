@@ -3,7 +3,7 @@ export default {
    name: "Cta",
    data() {
     return {
-      socialIcons: ["facebook", "periscope", "pinterest", "twitter", "youtube"],
+      socialIcons: ["facebook", "twitter", "youtube", "pinterest", "periscope"],
     };
   },
 }
@@ -16,7 +16,7 @@ export default {
          <div>
             <span class="fw-bold px-2">FOLLOW US</span>
             <a v-for="icon in socialIcons" href="#">
-               <img :src="'../../public/img/footer-' + icon +'.png'" :alt="'logo ' + icon" class="px-2">
+               <img :src="'img/footer-' + icon +'.png'" :alt="'logo ' + icon" class="px-2">
             </a>
          </div>
       </div>

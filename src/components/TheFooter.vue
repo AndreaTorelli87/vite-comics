@@ -23,11 +23,6 @@ export default {
          ]
       };
    },
-   methods: {
-      stampiamo(test) {
-         console.log(test);
-      }
-   }
 }
 </script>
 
@@ -44,7 +39,7 @@ export default {
                </ul>
             </div>
          </div>
-         <img src="../../public/img/dc-logo-bg.png" alt="logo DC">
+         <img src="img/dc-logo-bg.png" alt="logo DC">
       </div>
    </div>
 </template>
@@ -52,9 +47,6 @@ export default {
 <style scoped>
 .sfondo {
    background-image: url(../../public/img/footer-bg.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 50vh;
 }
 
 .container {

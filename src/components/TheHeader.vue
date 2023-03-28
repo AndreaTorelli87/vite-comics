@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div class="container d-flex justify-content-between">
-    <img src="../../public/img/dc-logo.png" alt="Logo DC">
+    <img src="../../public/img/dc-logo.png" alt="Logo DC" class="p-3">
     <ul class="d-flex justify-content-center align-items-center list-unstyled h-100 m-0">
       <li v-for="link in navLinks" class="px-3">
         <a :href="link" class="text-decoration-none text-black fw-bold">{{ link }}</a>
