@@ -34,7 +34,7 @@ export default {
                <h4 class="text-white fw-bold">{{ gruppo.title }}</h4>
                <ul class="list-unstyled">
                   <li v-for="link in gruppo.links">
-                     <a :href="link" class="text-decoration-none text-secondary">{{ link }}</a>
+                     <a :href="link">{{ link }}</a>
                   </li>
                </ul>
             </div>
@@ -51,6 +51,18 @@ export default {
 
 .container {
    height: 50vh;
+}
+
+a {
+   color: gray;
+   text-decoration: none;
+   transition: all 0.4s ease;
+
+   &:hover{
+      color: #0282F9;
+      font-weight: bold;
+      text-decoration: underline;
+   }
 }
 
 img {
